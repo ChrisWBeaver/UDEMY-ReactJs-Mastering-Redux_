@@ -9,16 +9,24 @@ class App extends Component {
         } 
     }
 
-    
+    changeBirthday() {
+        console.log(this.state); 
+    }
     render() {
         return (
             <div className="App">
                 <Form inline>
                     <h2>Input Your Birthday!</h2>
-                    <FormControl type="date"></FormControl>
+                    <FormControl 
+                      type="date"
+                      onChange={ event => this.setState({ newDate: event.target.value})}
+                    >
+                    </FormControl>
 
                     {' '}
-                    <Button>
+                    <Button
+                      onClick={() => this.changeBirthday()}
+                    >
                         Submit
                     </Button>
 
