@@ -5,12 +5,14 @@ class App extends Component {
     constructor() {
         super();
         this.state = {
-            newDate: ''
+            newDate: '', 
+            birthday: '1985-12-20'
         } 
     }
 
     changeBirthday() {
-        console.log(this.state); 
+        console.log(this.state);
+        this.setState({ birthdate: this.state.newDate}); 
     }
     render() {
         return (
