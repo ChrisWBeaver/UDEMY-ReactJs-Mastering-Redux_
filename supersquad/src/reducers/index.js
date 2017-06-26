@@ -1,3 +1,4 @@
+import { combineReducers } from 'redux'
 import characters_json from '../data/characters.json'
 import { ADD_CHARACTER } from '../actions';
 
@@ -28,6 +29,14 @@ function heros(state = [], action){
 
 function createCharacter(id){
   let characters = characters_json.find( c => c.id === id);
+  return characters;
 }
 
-export default characters; 
+const rootReducer = combineReducers(
+  {
+    characters, 
+    heros
+  }
+);
+
+export default rootReducer; 
