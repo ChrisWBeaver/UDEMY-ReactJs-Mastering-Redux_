@@ -12,5 +12,11 @@ class CharacterList extends Component {
 
 }
 
+
+function mapStateToProps(state) {
+  console.log('state', state); 
+  return {}; 
+}
+
 //connect character list to redux
-export default connect()(CharacterList);   
+export default connect(mapStateToProps, null)(CharacterList);   
