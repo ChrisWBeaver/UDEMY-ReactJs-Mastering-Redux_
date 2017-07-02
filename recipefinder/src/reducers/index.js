@@ -12,3 +12,5 @@ function recipes(state = [], action){
 }
 
 const rootReducer = combineReducers({ recipes })
+
+export default rootReducer;
