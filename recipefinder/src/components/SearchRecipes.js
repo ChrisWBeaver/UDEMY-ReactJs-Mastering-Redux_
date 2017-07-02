@@ -19,7 +19,7 @@ class SearchRecipes extends Component {
       method: 'GET'
     })
     .then(response => response.json())
-    .then(json => this.props.setRecipes(json));
+    .then(json => this.props.setRecipes(json.results));
   }
 
   render() {
