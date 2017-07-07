@@ -13,8 +13,8 @@ class FavoriteList extends Component {
             return (
              <RecipeItem 
                key={index} 
-               recipe={recipe}> 
-               favoriteButton={false}
+               recipe={recipe} 
+               favoriteButton={false}>
              </RecipeItem>
             )
           })
