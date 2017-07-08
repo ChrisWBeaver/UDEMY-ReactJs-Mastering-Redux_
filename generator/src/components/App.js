@@ -1,6 +1,6 @@
 import React, { Component } from 'react'; 
 import { connect } from 'react-redux';
-
+import '../styles/index.css';
 class App extends Component {
   constructor() {
     super(); 
@@ -21,7 +21,7 @@ class App extends Component {
             )
           })
         }
-        <div onClick={() => 
+        <div className="meme-button" onClick={() => 
                            {
                              this.setState({memeLimit: this.state.memeLimit + 10})
                            }
